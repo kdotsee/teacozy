@@ -32,10 +32,32 @@ nav{
   margin-left: 10px;
 }
 
-.mission{
-  height: 700px;
-  background-image: url(../resources/images/background.jpg);
+#content{
   display: flex;
-  justify content: center;
+  justify-content: space-around;
+  padding-top: 69px;
+}
+
+.mission{
+  width: 1200px;
+  height: 700px;
+  background-image: url(../images/background.jpg);
+  font-family: Helvetica;
+  display: flex;
+  flex-direction: row;
   align-items: center;
+  color: seashell;
+}
+
+.mission .text{
+  background-color: black;
+  text-align: center;
+  width:1200px;
+}
+
+.totm{
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+
 }
