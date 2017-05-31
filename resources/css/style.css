@@ -1,6 +1,7 @@
 body{
   background-color: black;
   opacity: 0.9;
+  margin-top: 0px;
 }
 
 header{
@@ -29,12 +30,17 @@ nav{
 .logo{
   align-items: center;
   height: 50px;
-  margin-left: 10px;
+  padding-left: 10px;
+}
+
+h2{
+  font-size: 40px;
 }
 
 #content{
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
   padding-top: 69px;
 }
 
@@ -42,22 +48,98 @@ nav{
   width: 1200px;
   height: 700px;
   background-image: url(../images/background.jpg);
-  font-family: Helvetica;
-  display: flex;
+  display:inline-flex;
   flex-direction: row;
   align-items: center;
-  color: seashell;
+  margin-bottom: 100px;
 }
 
 .mission .text{
   background-color: black;
-  text-align: center;
   width:1200px;
+  font-family: Helvetica;
+  text-align: center;
+  color: seashell;
 }
 
 .totm{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 1000px;
+  margin-bottom: 100px;
+}
+
+.totm .text{
+  background-color: black;
+  font-family: Helvetica;
+  text-align: center;
+  color: seashell;
+  justify-content: center;
+}
+
+.totm .link{
+  font-family: Helvetica;
+  text-align: center;
+  color: seashell;
+  display: block;
+
+}
+
+.items{
+  display:inline-block;
+  flex-flow: column wrap;
+  flex-basis: 300px;
+  justify-content: space-between;
+  margin: 15px;
+  text-align: center;
+  width: 300px;
+}
+
+.locations{
+  background-image: url(../images/locations.jpg);
+  height: 500px;
+  width: 1200px;
+  font-family: Helvetica;
+  text-align: center;
+  color: seashell;
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+  align-items:center;
+}
+
+.locations .text{
+  display: block;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.deets{
+  background-color: black;
+  opacity:1;
+  width: 300px;
+  padding:5px;
+  margin-right: 20px;
+  margin-top: 15px;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact{
+  flex-direction: column;
+  justify-content: center;
+  font-family: Helvetica;
+  text-align: center;
+  color: seashell;
+  height: 200px;
+}
+
+footer{
+  font-family: Helvetica;
+  color: seashell;
+  text-align: left;
+  margin-left: 20px;
 
 }
